@@ -1,0 +1,54 @@
+<!-- FILEPATH: /c:/Users/ROG ZEYPHRUS/Desktop/java/views/index.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="App.css">
+    <title>Twinza Designs</title>
+    <link rel="icon" type="image/png" href="favtwinza.png">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="App-logo-container">
+    <img src="favtwinza.png" alt="Logo" class="App-logo">
+</div>
+
+<div class="mainstuff">
+<h1>Twinza Designs is Currently Under Development</h1>
+
+<div class="follow-us">
+    <a href="https://www.instagram.com/twinzadesign/" target="_blank">
+        <img src="instagram.png" class="icon" alt="Instagram">
+    </a>
+    <a href="https://www.facebook.com/TwinzaDesign/" target="_blank">
+        <img src="facebook.png" class="icon" alt="Facebook">
+    </a>
+</div>
+
+<div class="under-development-message">
+    <p>Our website is currently under development. Stay up to date by following us on Instagram or Facebook.</p>
+    <p>Developed by Subasinghe Software Solutions.</p>
+</div>
+</div>
+</body>
+</html>
+<script>
+    function _toArray(arr) { 
+  return Array.isArray(arr) ? arr : Array.from(arr)
+}
+
+function makeSpans (selector) {
+  var _document$querySelect = document.querySelectorAll(selector)
+  var _document$querySelect2 = _toArray(_document$querySelect)
+  var elements = _document$querySelect2.slice(0)
+  
+  return elements.map(function (element) {
+    var text = element.innerText.split('')
+    var spans = text.map(function (letter) {
+      return '<span>' + letter + '</span>'
+    }).join('')
+    return element.innerHTML = spans
+  })
+}
+
+makeSpans('h1')
+</script>

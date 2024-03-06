@@ -1,0 +1,148 @@
+/* main.css */
+body{
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  color: #fff;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo-container {
+  position: relative;
+}
+
+.App-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-logo {
+  animation: blink 3s infinite; /* Adjust the animation duration and timing as needed */
+}
+
+.App-header {
+  background-color: #000000;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+.under-development-message {
+  text-align: center;
+  margin-top: 20px; /* Adjust spacing as needed */
+  font-family: Arial, sans-serif; /* Adjust font-family as needed */
+  color: #555; /* Adjust text color as needed */
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* Styling for social media icons */
+.follow-us {
+  margin-top: 20px; /* Adjust spacing as needed */
+  width: 500px;
+  margin: auto; /* Center the icons */
+}
+
+/* Styling for social media icons */
+.follow-us a {
+  margin: 0 10px; /* Adjust spacing between icons as needed */
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.icon {
+  filter: grayscale(100%);
+  transition: filter 450ms ease;
+}
+
+.icon:is(:hover, :focus) {
+  filter: grayscale(0%) drop-shadow(0 8px 8px rgba(0, 0, 0, 0.5));
+}
+
+.mainstuff {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .App-logo {
+    height: 30vmin;
+  }
+
+  .follow-us {
+    flex-wrap: wrap;
+  }
+
+  .icon {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+  }
+}
+
+h1 {
+  font-size: 4vw;
+  cursor: cell;
+  text-align: center;
+  line-height: 5.5vw;
+}
+
+h1 span {
+  transition: color 3s;
+  transition-delay: 1s;
+  letter-spacing: -0.2vw;
+}
+
+h1 span:hover {
+  transition: color 0s;
+}
+
+h1 span:nth-child(1n):hover {
+  color: #06b18f;
+}
+
+h1 span:nth-child(2n):hover {
+  color: #07715d;
+}
+
+h1 span:nth-child(3n):hover {
+  color: #025946;
+}
